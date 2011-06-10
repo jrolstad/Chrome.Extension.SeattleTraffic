@@ -1,0 +1,194 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<title>Seattle Area Traffic Extension Popup</title>
+	<link type="text/css" href="jquery/css/redmond/jquery-ui-1.8.custom.css" rel="stylesheet" />	
+		<script type="text/javascript" src="jquery/js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="jquery/js/jquery-ui-1.8.custom.min.js"></script>
+	<script type="text/javascript"> 
+	$(function() {
+		$("#tabs").tabs();
+		
+		$("button, input:submit, a", ".demo").button();
+		
+		$("a", ".demo").click(function() { return false; });
+	});
+	
+	</script> 
+</head> 
+<body> 
+ 
+<div class="demo" style="width:700px"> 
+
+<div id="tabs"> 
+	<ul> 
+		<li><a href="#tabs-1">Seattle Map</a></li> 
+		<li><a href="#tabs-2">Lake Washington Bridges</a></li> 
+		<li><a href="#tabs-3">Links</a></li> 
+	</ul> 
+	<div id="tabs-1"> 
+		<img height="1200" src="http://images.wsdot.wa.gov/nwflow/flowmaps/video_map_SeattleMetro.gif" width="383"  usemap="#SeattleMap" alt="Seattle Area Traffic Congestion Map" class="trafficmap" /><br /> 
+		<map name="SeattleMap" id="SeattleMap"> 
+		    <area shape="rect" coords="161,591,176,601" href="http://www.wsdot.wa.gov/traffic/seattle/sr522_campusway.htm#cam" alt="SR 522: Campus Way" title="SR 522: Campus Way" target="new"/>
+			<area shape="rect" coords="271,647,325,666" href="http://www.redmond.gov/TrafficCameras/" alt="City of Redmond traffic cameras" title="City of Redmond traffic cameras"  target="new"/> 
+		    <area shape="rect" coords="242,498,257,508" href="http://www.wsdot.wa.gov/traffic/seattle/SR9_SR524.htm#cam" alt="SR 9: SR 524" title="SR 9: SR 524"  target="new"/> 
+		    <area shape="rect" coords="237,531,252,541" href="http://www.wsdot.wa.gov/traffic/seattle/SR9_228thStSE.htm#cam" alt="SR 9: 228th St SE" title="SR 9: 228th St SE"  target="new"/> 
+		    <area shape="rect" coords="240,551,255,561" href="http://www.wsdot.wa.gov/traffic/seattle/SR522_SR9.htm#cam" alt="SR 522: SR 9" title="SR 522: SR 9"  target="new"/> 
+		    <area shape="rect" coords="17,487,77,506" href="http://www.ci.lynnwood.wa.us/Content/Services.aspx?id=491" alt="City of Lynnwood traffic cameras" title="City of Lynnwood traffic cameras"  target="new"/> 
+		    <area shape="rect" coords="219,271,234,281" href="http://www.wsdot.wa.gov/traffic/seattle/i5/homeacresrd.htm" alt="US 2: Homeacre Rd" title="US 2: Homeacre Rd"  target="new"/> 
+		    <area shape="rect" coords="224,922,239,932" href="http://www.wsdot.wa.gov/traffic/seattle/sr169_140thwayse.htm#cam" alt="140th Way SE" title="140th Way SE"  target="new"/> 
+		    <area shape="rect" coords="165,812,180,822" href="http://www.wsdot.wa.gov/traffic/seattle/I90_EMercerWay.htm#cam" alt="I-90: E Mercer Way" title="I-90: E Mercer Way"  target="new"/> 
+		    <area shape="rect" coords="166,298,182,307" href="http://www.wsdot.wa.gov/traffic/seattle/I5/47thStSE.htm" alt="47th St SE" title="47th St SE"  target="new"/> 
+		    <area shape="rect" coords="200,309,216,318" href="http://www.wsdot.wa.gov/traffic/seattle/I5/60thStSE.htm" alt="60th St SE" title="60th St SE"  target="new"/> 
+		    <area shape="rect" coords="200,323,216,332" href="http://www.wsdot.wa.gov/traffic/seattle/I5/73rdStSE.htm" alt="73rd St SE" title="73rd St SE"  target="new"/> 
+		    <area shape="rect" coords="162,332,178,341" href="http://www.wsdot.wa.gov/traffic/seattle/I5/77thStSE.htm" alt="77th St SE" title="77th St SE"  target="new"/> 
+		    <area shape="rect" coords="348,725,365,735" href="http://www.wsdot.wa.gov/traffic/seattle/SR202_SahaleeWay.htm#cam" alt="SR 202: Sahalee Way" title="SR 202: Sahalee Way"  target="new"/> 
+		    <area shape="rect" coords="320,715,337,725" href="http://www.wsdot.wa.gov/traffic/seattle/SR202_204thAveNE.htm#cam" alt="SR 202: 204th Ave NE" title="SR 202: 204th Ave NE"  target="new"/> 
+		    <area shape="rect" coords="1,1131,43,1158" href="http://www.wsdot.wa.gov/traffic/tacoma/default.htm" alt="Tacoma area camera map" title="Tacoma area camera map"  target="new"/> 
+		    <area shape="rect" coords="54,746,93,762" href="http://web5.seattle.gov/travelers/" alt="City of Seattle traffic cameras" title="City of Seattle traffic cameras"  target="new"/> 
+		    <area shape="rect" coords="226,764,273,780" href="http://trafficmap.cityofbellevue.net/" alt="City of Bellevue traffic cameras" title="City of Bellevue traffic cameras"  target="new"/> 
+		    <area shape="rect" coords="253,56,376,105" href="http://www.wsdot.wa.gov/Northwest/King/ExpressLanes" alt="Express lanes information" title="Express lanes information"  target="new"/> 
+		    <area shape="circle" coords="152,715,10" href="http://www.wsdot.wa.gov/traffic/seattle/sr520_92avene.htm#cam" alt="92nd Ave NE video file" title="92nd Ave NE video file"  target="new"/> 
+		    <area shape="circle" coords="77,1026,10" href="http://www.wsdot.wa.gov/traffic/seattle/i5_sr516.htm#cam" alt="SR 516 video file" title="SR 516 video file"  target="new"/> 
+		    <area shape="circle" coords="162,1121,10" href="http://www.wsdot.wa.gov/traffic/seattle/sr167_15stnw.htm#cam" alt="15th St NW video file" title="15th St NW video file"  target="new"/> 
+		    <area shape="circle" coords="73,1122,10" href="http://www.wsdot.wa.gov/traffic/seattle/i5_s320th.htm#cam" alt="S 320th St video file" title="S 320th St video file"  target="new"/> 
+		    <area shape="circle" coords="90,975,10" href="http://www.wsdot.wa.gov/traffic/seattle/I5_S188st.htm#cam" alt="S 188th St video file" title="S 188th St video file"  target="new"/> 
+		    <area shape="circle" coords="109,809,10" href="http://www.wsdot.wa.gov/traffic/seattle/i90_midspan.htm#cam" alt="I-90 Midspan video file" title="I-90 Midspan video file"  target="new"/> 
+		    <area shape="circle" coords="198,931,10" href="http://www.wsdot.wa.gov/traffic/seattle/i405_sr169.htm#cam" alt="SR 169 video file" title="SR 169 video file"  target="new"/> 
+		    <area shape="circle" coords="73,834,10" href="http://www.wsdot.wa.gov/traffic/seattle/i5_albropl.htm#cam" alt="Albro Pl video file" title="Albro Pl video file"  target="new"/> 
+		    <area shape="circle" coords="104,746,10" href="http://www.wsdot.wa.gov/traffic/seattle/sr520_midspan.htm#cam" alt="SR 520 Midspan video file" title="SR 520 Midspan video file"  target="new"/> 
+		    <area shape="circle" coords="23,739,10" href="http://www.wsdot.wa.gov/traffic/seattle/i5_mercerst.htm#cam" alt="Mercer St video file" title="Mercer St video file"  target="new"/> 
+		    <area shape="circle" coords="68,702,10" href="http://www.wsdot.wa.gov/traffic/seattle/i5_NE45st.htm#cam" alt="NE 45th St video file" title="NE 45th St video file"  target="new"/> 
+		    <area shape="circle" coords="75,558,10" href="http://www.wsdot.wa.gov/traffic/seattle/I5_236stsw.htm#cam" alt="236th St SW video file" title="236th St SW video file"  target="new"/> 
+		    <area shape="rect" coords="167,388,182,398" href="http://www.wsdot.wa.gov/traffic/seattle/i5_112thnb.htm" alt="NB @ 112th St SE" title="NB @ 112th St SE"  target="new"/> 
+		    <area shape="circle" coords="178,527,10" href="http://www.wsdot.wa.gov/traffic/seattle/I405_SR527_interchange.htm#cam" alt="SR 527 video file" title="SR 527 video file"  target="new"/> 
+		    <area shape="circle" coords="216,640,10" href="http://www.wsdot.wa.gov/traffic/seattle/I-405_ne124th.htm#cam" alt="I-405 - NE 124th video file" title="I-405 - NE 124th video file"  target="new"/> 
+		    <area shape="circle" coords="216,770,10" href="http://www.wsdot.wa.gov/traffic/seattle/i405_se8th.htm#cam" alt="SE 8th St video file" title="SE 8th St video file"  target="new"/> 
+		    <area shape="circle" coords="194,363,10" href="http://www.wsdot.wa.gov/traffic/seattle/I5_sr526ic.htm" alt="SR 526 video file" title="SR 526 video file"  target="new"/> 
+		    <area shape="rect" coords="307,298,322,308" href="http://www.wsdot.wa.gov/traffic/seattle/US2_SR9_south.htm" alt="US 2/SR 9 Interchange - Looking South" title="US 2/SR 204 Interchange"  target="new"/> 
+		    <area shape="rect" coords="307,287,322,297" href="http://www.wsdot.wa.gov/traffic/seattle/US2_SR9_north.htm" alt="US 2/SR 9 Interchange - Looking North" title="US 2/SR 9 Interchange - Looking North"  target="new"/> 
+		    <area shape="rect" coords="167,287,183,296" href="http://www.wsdot.wa.gov/traffic/seattle/I5/41stSE.htm" alt="41st St SE" title="41st St SE"  target="new"/> 
+		    <area shape="rect" coords="97,1084,112,1094" href="http://www.wsdot.wa.gov/traffic/seattle/I5_288th.htm#cam" alt="S 288th St" title="S 288th St"  target="new"/> 
+		    <area shape="rect" coords="69,1053,84,1063" href="http://www.wsdot.wa.gov/traffic/seattle/I5_260th.htm#cam" alt="S 260th St" title="S 260th St"  target="new"/> 
+		    <area shape="rect" coords="73,986,88,996" href="http://www.wsdot.wa.gov/traffic/seattle/I5_200th.htm#cam" alt="S 200th St" title="S 200th St"  target="new"/> 
+		    <area shape="rect" coords="87,957,102,967" href="http://www.wsdot.wa.gov/traffic/seattle/i5_178th.htm#cam" alt="S 178th St" title="S 178th St"  target="new"/> 
+		    <area shape="rect" coords="115,928,130,938" href="http://www.wsdot.wa.gov/traffic/seattle/I5_southcenter.htm#cam" alt="Southcenter" title="Southcenter"  target="new"/> 
+		    <area shape="rect" coords="110,914,125,924" href="http://www.wsdot.wa.gov/traffic/seattle/i5_sr599_interchange.htm#cam" alt="SR 599" title="SR 599"  target="new"/> 
+		    <area shape="rect" coords="115,895,130,905" href="http://www.wsdot.wa.gov/traffic/seattle/I5_duwamishriver.htm#cam" alt="Duwamish River" title="Duwamish River"  target="new"/> 
+		    <area shape="rect" coords="70,883,85,893" href="http://www.wsdot.wa.gov/traffic/seattle/i5_boeingaccess.htm#cam" alt="Boeing Access Road" title="Boeing Access Road"  target="new"/> 
+		    <area shape="rect" coords="76,847,91,857" href="http://www.wsdot.wa.gov/traffic/seattle/I5_SRoseSt#cam" alt="I-5: S Rose St" title="I-5: S Rose St"  target="new"/> 
+		    <area shape="rect" coords="29,820,44,830" href="http://www.wsdot.wa.gov/traffic/seattle/I5_spokanest.htm#cam" alt="Spokane St" title="Spokane St"  target="new"/> 
+		    <area shape="rect" coords="29,798,44,808" href="http://www.wsdot.wa.gov/traffic/seattle/i5_holgatest.htm#cam" alt="Holgate St" title="Holgate St"  target="new"/> 
+		    <area shape="rect" coords="53,761,68,771" href="http://www.wsdot.wa.gov/traffic/seattle/i5_yeslerway.htm#cam" alt="Yesler Way" title="Yesler Way"  target="new"/> 
+		    <area shape="rect" coords="15,749,30,759" href="http://www.wsdot.wa.gov/traffic/seattle/i5_pinest.htm#cam" alt="Pine St" title="Pine St"  target="new"/> 
+		    <area shape="rect" coords="21,721,36,730" href="http://www.wsdot.wa.gov/traffic/seattle/i5_roanokest.htm#cam" alt="Roanoke St" title="Roanoke St"  target="new"/> 
+		    <area shape="rect" coords="57,674,72,684" href="http://www.wsdot.wa.gov/traffic/seattle/i5_lakecityway.htm#cam" alt="Lake City Way" title="Lake City Way"  target="new"/> 
+		    <area shape="rect" coords="16,665,31,675" href="http://www.wsdot.wa.gov/traffic/seattle/i5_85th.htm#cam" alt="NE 85th St" title="NE 85th St"  target="new"/> 
+		    <area shape="rect" coords="13,641,28,651" href="http://www.wsdot.wa.gov/traffic/seattle/i5_northgateway.htm#cam" alt="Northgate Way (NE 110th St)" title="Northgate Way (NE 110th St)"  target="new"/> 
+		    <area shape="rect" coords="53,611,68,621" href="http://www.wsdot.wa.gov/traffic/seattle/i5_145th.htm#cam" alt="NE 145th St" title="NE 145th St"  target="new"/> 
+		    <area shape="rect" coords="24,585,39,595" href="http://www.wsdot.wa.gov/traffic/seattle/i5_175th.htm#cam" alt="NE 175th St" title="NE 175th St"  target="new"/> 
+		    <area shape="rect" coords="30,567,45,577" href="http://www.wsdot.wa.gov/traffic/seattle/i5_195th.htm#cam" alt="NE 195th St" title="NE 195th St"  target="new"/> 
+		    <area shape="rect" coords="38,524,53,534" href="http://www.wsdot.wa.gov/traffic/seattle/i5_220th.htm#cam" alt="220th St SW" title="220th St SW"  target="new"/> 
+		    <area shape="rect" coords="65,506,80,516" href="http://www.wsdot.wa.gov/traffic/seattle/i5_44th.htm#cam" alt="44th Ave W" title="44th Ave W"  target="new"/> 
+		    <area shape="rect" coords="123,474,138,484" href="http://www.wsdot.wa.gov/traffic/seattle/i5_164th.htm" alt="164th St SW" title="164th St SW"  target="new"/> 
+		    <area shape="rect" coords="106,445,121,455" href="http://www.wsdot.wa.gov/traffic/seattle/i5_148th.htm" alt="148th St SW" title="148th St SW"  target="new"/> 
+		    <area shape="rect" coords="119,408,134,418" href="http://www.wsdot.wa.gov/traffic/seattle/i5_128th.htm" alt="128th St SW" title="128th St SW"  target="new"/> 
+		    <area shape="rect" coords="203,273,218,283" href="http://www.wsdot.wa.gov/traffic/seattle/i5_pacific.htm" alt="Pacific Ave" title="Pacific Ave"  target="new"/> 
+		    <area shape="rect" coords="141,376,156,386" href="http://www.wsdot.wa.gov/traffic/seattle/i5_112thsb.htm" alt="SB @ 112th St SE" title="SB @ 112th St SE"  target="new"/> 
+		    <area shape="rect" coords="29,786,44,796" href="http://www.wsdot.wa.gov/traffic/seattle/i5_i90_interchange.htm#cam" alt="I-5/I-90 Interchange" title="I-5/I-90 Interchange"  target="new"/> 
+		    <area shape="rect" coords="60,799,75,809" href="http://www.wsdot.wa.gov/traffic/seattle/i90_18th.htm#cam" alt="18th Ave S (Near Rainier Ave)" title="18th Ave S (Near Rainier Ave)"  target="new"/> 
+		    <area shape="rect" coords="148,809,163,819" href="http://www.wsdot.wa.gov/traffic/seattle/i90_lutherburbank.htm#cam" alt="I-90 - Luther Burbank" title="I-90 - Luther Burbank"  target="new"/> 
+		    <area shape="rect" coords="131,802,146,812" href="http://www.wsdot.wa.gov/traffic/seattle/i90_76th.htm#cam" alt="76th Ave SE" title="76th Ave SE"  target="new"/> 
+		    <area shape="rect" coords="177,785,192,795" href="http://www.wsdot.wa.gov/traffic/seattle/i90_bellevueway.htm#cam" alt="Bellevue Way" title="Bellevue Way"  target="new"/> 
+		    <area shape="rect" coords="213,786,228,796" href="http://www.wsdot.wa.gov/traffic/seattle/i90_i405_interchange.htm#cam" alt="I-90/I-405 Interchange" title="I-90/I-405 Interchange"  target="new"/> 
+		    <area shape="rect" coords="234,786,249,796" href="http://www.wsdot.wa.gov/traffic/seattle/i90_142nd.htm#cam" alt="150th Ave SE" title="150th Ave SE"  target="new"/> 
+		    <area shape="rect" coords="284,802,299,812" href="http://www.wsdot.wa.gov/traffic/seattle/i90_westlakesammpway.htm#cam" alt="West Lake Sammamish Parkway" title="West Lake Sammamish Parkway"  target="new"/> 
+		    <area shape="rect" coords="323,820,338,830" href="http://www.wsdot.wa.gov/traffic/seattle/I90_SR900.htm#cam" alt="SR 900" title="SR 900"  target="new"/> 
+		    <area shape="rect" coords="348,863,363,873" href="http://www.wsdot.wa.gov/traffic/seattle/I90_SunsetWay.htm#cam" alt="Sunset Way" title="Sunset Way"  target="new"/> 
+		    <area shape="rect" coords="13,858,28,868" href="http://www.wsdot.wa.gov/traffic/seattle/sr99_wmarginalway.htm#cam" alt="SR 99 at W Marginal Way" title="SR 99 at W Marginal Way"  target="new"/> 
+		    <area shape="rect" coords="35,845,50,855" href="http://www.wsdot.wa.gov/traffic/seattle/sr99_michiganst.htm#cam" alt="SR 99 at Michigan St" title="SR 99 at Michigan St"  target="new"/> 
+		    <area shape="rect" coords="151,1072,166,1082" href="http://www.wsdot.wa.gov/traffic/seattle/sr167_277th.htm#cam" alt="S 277th St" title="S 277th St"  target="new"/> 
+		    <area shape="rect" coords="151,1033,166,1043" href="http://www.wsdot.wa.gov/traffic/seattle/sr167_willisst.htm#cam" alt="SR 516 (Willis St)" title="SR 516 (Willis St)"  target="new"/> 
+		    <area shape="rect" coords="160,1020,175,1030" href="http://www.wsdot.wa.gov/traffic/seattle/sr167_84th.htm#cam" alt="84th Ave S" title="84th Ave S"  target="new"/> 
+		    <area shape="rect" coords="168,970,183,980" href="http://www.wsdot.wa.gov/traffic/seattle/sr167_180th.htm#cam" alt="S 180th St" title="S 180th St"  target="new"/> 
+		    <area shape="rect" coords="166,1002,181,1012" href="http://www.wsdot.wa.gov/traffic/seattle/sr167_s222ndst.htm#cam" alt="S 222nd St" title="S 222nd St"  target="new"/> 
+		    <area shape="rect" coords="120,950,135,960" href="http://www.wsdot.wa.gov/traffic/seattle/i405_westvalleyhwy.htm#cam" alt="West Valley Highway" title="West Valley Highway"  target="new"/> 
+		    <area shape="rect" coords="138,924,153,934" href="http://www.wsdot.wa.gov/traffic/seattle/i405_sr167_interchange.htm#cam" alt="I-405/SR 167 Interchange" title="I-405/SR 167 Interchange"  target="new"/> 
+		    <area shape="rect" coords="196,905,211,915" href="http://www.wsdot.wa.gov/traffic/seattle/i405_sunsetblvd.htm#cam" alt="Sunset Blvd" title="Sunset Blvd"  target="new"/> 
+		    <area shape="rect" coords="164,894,179,904" href="http://www.wsdot.wa.gov/traffic/seattle/i405_parkdr.htm#cam" alt="NE Park Dr" title="NE Park Dr"  target="new"/> 
+		    <area shape="rect" coords="193,879,208,889" href="http://www.wsdot.wa.gov/traffic/seattle/i405_30th.htm#cam" alt="NE 30th St" title="NE 30th St"  target="new"/> 
+		    <area shape="rect" coords="342,827,359,838" href="http://www.wsdot.wa.gov/traffic/seattle/I90_FrontSt.htm#cam" alt="I-90: Front St" title="I-90: Front St"  target="new"/> 
+		    <area shape="rect" coords="195,862,210,872" href="http://www.wsdot.wa.gov/traffic/seattle/i405_44th.htm#cam" alt="NE 44th St" title="NE 44th St"  target="new"/> 
+		    <area shape="rect" coords="196,846,211,856" href="http://www.wsdot.wa.gov/traffic/seattle/i405_64th.htm#cam" alt="SE 64th St" title="SE 64th St"  target="new"/> 
+		    <area shape="rect" coords="169,831,184,841" href="http://www.wsdot.wa.gov/traffic/seattle/i405_112th.htm#cam" alt="112th Ave SE" title="112th Ave SE"  target="new"/> 
+		    <area shape="rect" coords="205,821,220,831" href="http://www.wsdot.wa.gov/traffic/seattle/i405_coalcreekpkway.htm#cam" alt="Coal Creek Parkway" title="Coal Creek Parkway"  target="new"/> 
+		    <area shape="rect" coords="178,775,193,785" href="http://www.wsdot.wa.gov/traffic/seattle/I405_SE20thStSB.htm#cam" alt="I-405: SE 20th St" title="I-405: SE 20th St"  target="new"/> 
+		    <area shape="rect" coords="174,756,189,766" href="http://www.wsdot.wa.gov/traffic/seattle/i405_8th.htm#cam" alt="NE 8th St" title="NE 8th St"  target="new"/> 
+		    <area shape="rect" coords="201,750,216,760" href="http://www.wsdot.wa.gov/traffic/seattle/sr520_i405_interchange.htm#cam" alt="I-405/SR 520 Interchange" title="I-405/SR 520 Interchange"  target="new"/> 
+		    <area shape="rect" coords="174,700,189,710" href="http://www.wsdot.wa.gov/traffic/seattle/i405_53rd.htm#cam" alt="NE 53rd St" title="NE 53rd St"  target="new"/> 
+		    <area shape="rect" coords="202,678,217,688" href="http://www.wsdot.wa.gov/traffic/seattle/i405_85th.htm#cam" alt="NE 85th St" title="NE 85th St"  target="new"/> 
+		    <area shape="rect" coords="207,649,222,658" href="http://www.wsdot.wa.gov/traffic/seattle/i405_116th.htm#cam" alt="NE 116th St" title="NE 116th St"  target="new"/> 
+		    <area shape="rect" coords="173,627,188,637" href="http://www.wsdot.wa.gov/traffic/seattle/i405_132nd.htm#cam" alt="NE 132nd St" title="NE 132nd St"  target="new"/> 
+		    <area shape="rect" coords="175,597,190,607" href="http://www.wsdot.wa.gov/traffic/seattle/i405_160th.htm#cam" alt="NE 160th St" title="NE 160th St"  target="new"/> 
+		    <area shape="rect" coords="171,570,186,580" href="http://www.wsdot.wa.gov/traffic/seattle/i405_sr522_interchange.htm#cam" alt="I-405/SR 522 Interchange" title="I-405/SR 522 Interchange"  target="new"/> 
+		    <area shape="rect" coords="200,562,215,572" href="http://www.wsdot.wa.gov/traffic/seattle/i405_195th.htm#cam" alt="NE 195th St" title="NE 195th St"  target="new"/> 
+		    <area shape="rect" coords="128,520,143,530" href="http://www.wsdot.wa.gov/traffic/seattle/i405_204thsb.htm#cam" alt="204th St SE, SB" title="204th St SE, SB"  target="new"/> 
+		    <area shape="rect" coords="149,502,164,512" href="http://www.wsdot.wa.gov/traffic/seattle/i405_204thnb.htm#cam" alt="204th St SE, NB" title="204th St SE, NB"  target="new"/> 
+		    <area shape="rect" coords="113,507,128,517" href="http://www.wsdot.wa.gov/traffic/seattle/i405_filbertrd.htm#cam" alt="Filbert Rd (SR 524)" title="Filbert Rd (SR 524)"  target="new"/> 
+		    <area shape="rect" coords="88,492,103,502" href="http://www.wsdot.wa.gov/traffic/seattle/i5_i405_interchange.htm#cam" alt="I-5/I-405 Interchange (Alderwood)" title="I-5/I-405 Interchange (Alderwood)"  target="new"/> 
+		    <area shape="rect" coords="286,1056,301,1066" href="http://www.wsdot.wa.gov/traffic/seattle/sr516_sr18.htm#cam" alt="SR 516 at SR 18" title="SR 516 at SR 18"  target="new"/> 
+		    <area shape="rect" coords="68,711,83,721" href="http://www.wsdot.wa.gov/traffic/seattle/sr520_montlake.htm#cam" alt="Montlake Boulevard" title="Montlake Boulevard"  target="new"/> 
+		    <area shape="rect" coords="129,717,144,727" href="http://www.wsdot.wa.gov/traffic/seattle/sr520_easthighrise.htm#cam" alt="East end of the SR 520 Floating Bridge" title="East end of the SR 520 Floating Bridge"  target="new"/> 
+		    <area shape="rect" coords="161,711,175,721" href="http://www.wsdot.wa.gov/traffic/seattle/sr520_bellevueway.htm#cam" alt="Bellevue Way (104th Ave NE)" title="Bellevue Way (104th Ave NE)"  target="new"/> 
+		    <area shape="rect" coords="210,728,225,738" href="http://www.wsdot.wa.gov/traffic/seattle/sr520_124th.htm#cam" alt="124th Ave NE" title="124th Ave NE"  target="new"/> 
+		    <area shape="rect" coords="243,742,258,752" href="http://www.wsdot.wa.gov/traffic/seattle/sr520_148th.htm#cam" alt="148th Ave NE" title="148th Ave NE"  target="new"/> 
+		    <area shape="rect" coords="227,705,242,715" href="http://www.wsdot.wa.gov/traffic/seattle/sr520_51st.htm#cam" alt="NE 51st St" title="NE 51st St"  target="new"/> 
+		    <area shape="rect" coords="236,684,251,694" href="http://www.wsdot.wa.gov/traffic/seattle/sr520_westlakesammpway.htm#cam" alt="West Lake Sammamish Parkway" title="West Lake Sammamish Parkway"  target="new"/> 
+		    <area shape="rect" coords="265,681,280,691" href="http://www.wsdot.wa.gov/traffic/seattle/sr520_redmondway.htm#cam" alt="Redmond Way (SR 202)" title="Redmond Way (SR 202)"  target="new"/> 
+		    <area shape="rect" coords="79,587,94,597" href="http://www.wsdot.wa.gov/traffic/seattle/sr522_ballingerway.htm#cam" alt="Ballinger Way (SR 104)" title="Ballinger Way (SR 104)"  target="new"/> 
+		    <area shape="rect" coords="124,573,139,583" href="http://www.wsdot.wa.gov/traffic/seattle/sr522_68th.htm#cam" alt="68th Ave NE" title="68th Ave NE"  target="new"/> 
+		    <area shape="rect" coords="295,511,310,520" href="http://www.wsdot.wa.gov/traffic/seattle/sr522_paradiselk_south.htm#cam" alt="Paradise Lake Rd (Looking South)" title="Paradise Lake Rd (Looking South)"  target="new"/> 
+		    <area shape="rect" coords="285,701,302,711" href="http://www.wsdot.wa.gov/traffic/seattle/elksammpkwy.htm#cam" alt="SR 202: E Lake Sammamish Pkwy" title="SR 202: E Lake Sammamish Pkwy"  target="new"/> 
+		    <area shape="rect" coords="292,502,307,511" href="http://www.wsdot.wa.gov/traffic/seattle/sr522_paradiselk_north.htm#cam" alt="Paradise Lake Rd (Looking North)" title="Paradise Lake Rd (Looking North)"  target="new"/> 
+		    <area shape="rect" coords="70,950,85,959" href="http://www.wsdot.wa.gov/traffic/seattle/SR518_SR99interchange.htm#cam" alt="SR 518: SR 99 Interchange" title="SR 518: SR 99 Interchange"  target="new"/> 
+		    <area shape="rect" coords="261,256,276,266" href="http://www.wsdot.wa.gov/traffic/seattle/us2_sr204_interchange.htm" alt="US 2/SR 204 Interchange" title="US 2/SR 204 Interchange - "  target="new"/> 
+		    <area shape="rect" coords="190,234,205,243" href="http://www.wsdot.wa.gov/traffic/seattle/I5_emarineviews.htm" alt="Marine View Dr (south)" title="Marine View Dr (south)"  target="new"/> 
+		    <area shape="rect" coords="79,359,94,369" href="http://www.wsdot.wa.gov/traffic/seattle/sr525_painefieldblvd.htm" alt="Paine Field Blvd" title="Paine Field Blvd"  target="new"/> 
+		    <area shape="rect" coords="42,283,70,297" href="http://www.wsdot.wa.gov/ferries/schedules/current/index.cfm?route=muk-cl" alt="Mukilteo to Clinton Ferry"  target="new"/> 
+		    <area shape="rect" coords="72,418,87,428" href="http://www.wsdot.wa.gov/traffic/seattle/sr525_sr99_interchange.htm" alt="SR 99 Interchange" title="SR 99 Interchange"  target="new"/> 
+		    <area shape="rect" coords="72,332,87,342" href="http://www.wsdot.wa.gov/traffic/seattle/sr525_76th.htm" alt="76th St SW" title="76th St SW"  target="new"/> 
+		    <area shape="rect" coords="68,298,83,308" href="http://www.wsdot.wa.gov/traffic/seattle/sr525_mukilteoferry.htm" alt="SR 525: 5th St" title="SR 525: 5th St"  target="new"/> 
+		    <area shape="rect" coords="76,1192,91,1200" href="http://www.wsdot.wa.gov/traffic/seattle/i5_s375th.htm#cam" alt="S 375th St" title="S 375th St"  target="new"/> 
+		    <area shape="rect" coords="79,1183,94,1192" href="http://www.wsdot.wa.gov/traffic/seattle/i5_enchantedpkwy.htm#cam" alt="Enchanted Parkway" title="I-5 - Enchanted Parkway"  target="new"/> 
+		    <area shape="rect" coords="59,1149,74,1159" href="http://www.wsdot.wa.gov/traffic/seattle/i5_sr18_interchange.htm#cam" alt="I-5/SR 18 Interchange" title="I-5/SR 18 Interchange"  target="new"/> 
+		    <area shape="rect" coords="185,170,200,179" href="http://www.wsdot.wa.gov/traffic/seattle/I5_ebeysloughs.htm" alt="Ebey Slough (south)" title="Ebey Slough (south)"  target="new"/> 
+		    <area shape="rect" coords="160,475,176,484" href="http://www.wsdot.wa.gov/traffic/seattle/sr527_164th.htm" alt="SR 527 - 164th" title="SR 527 - 164th St SE"  target="new"/> 
+		    <area shape="rect" coords="113,1133,128,1143" href="http://www.wsdot.wa.gov/traffic/seattle/SR18/westvalleyhwy.htm#cam" alt="SR 18 - West Valley Hwy" title="West Valley Highway"  target="new"/> 
+		    <area shape="rect" coords="97,1137,112,1147" href="http://www.wsdot.wa.gov/traffic/seattle/SR18/weyerhaeuserway.htm#cam" alt="SR 18 - Weyerhaeuser Way" title="SR 18 - Weyerhaeuser Way"  target="new"/> 
+		    <area shape="rect" coords="338,466,354,476" href="http://www.wsdot.wa.gov/traffic/seattle/FalesRd.htm#cam" alt="SR 522 at Fales Rd" title="SR 522 at Fales Rd"  target="new"/> 
+		    <area shape="rect" coords="339,486,355,496" href="http://www.wsdot.wa.gov/traffic/seattle/EchoLkRd.htm#cam" alt="SR 522 at Echo Lake Rd" title="SR 522 at Echo Lake Rd"  target="new"/> 
+		    <area shape="rect" coords="183,29,198,38" href="http://www.wsdot.wa.gov/traffic/seattle/sr531.htm#cam" alt="I-5 at SR 531" title="I-5 at SR 531"  target="new"/> 
+		    <area shape="rect" coords="367,911,382,921" href="http://www.wsdot.wa.gov/traffic/seattle/sr18_tigermountain.htm#cam" alt="SR 18 - Tiger Mountain" title="Tiger Mountain"  target="new"/> 
+		    <area shape="rect" coords="168,1154,183,1164" href="http://www.wsdot.wa.gov/traffic/seattle/auburnway.htm#cam" alt="SR 18 at Auburn Way" title="SR 18 at Auburn Way"  target="new"/> 
+		    <area shape="rect" coords="330,503,382,522" href="http://www.wsdot.wa.gov/traffic/monroe/" alt="Monroe area camera map"  target="new"/> 
+		    <area shape="rect" coords="123,32,178,57" href="http://www.wsdot.wa.gov/Traffic/cameras/mtvernonstanwood.aspx" alt="Stanwood and Mt Vernon area camera map" title="Stanwood and Mt Vernon area camera map"  target="new"/> 
+		    <area shape="rect" coords="70,404,85,414" href="http://www.wsdot.wa.gov/traffic/seattle/sr525_beverlyparkrd.htm" alt="Beverly Park Rd" title="Beverly Park Rd"  target="new"/> 
+		    <area shape="rect" coords="259,789,275,800" href="http://www.wsdot.wa.gov/traffic/seattle/I90_163rdAveSE#cam" alt="I-90: 163rd Ave SE" title="I-90: 163rd Ave SE"  target="new"/> 
+		    <area shape="rect" coords="160,779,178,790" href="http://www.wsdot.wa.gov/traffic/seattle/I90_Shorewood.htm#cam" alt="I-90: Shorewood" title="I-90: Shorewood"  target="new"/> 
+		    <area shape="rect" coords="143,769,160,781" href="http://www.wsdot.wa.gov/traffic/seattle/I90_IslandCrestWay.htm#cam" alt="I-90: Island Crest Way" title="I-90: Island Crest Way"  target="new"/> 
+		  </map>
+	</div> 
+	<div id="tabs-2"> 
+		<img src="http://images.wsdot.wa.gov/nwflow/flowmaps/bridges.gif" alt="Unable to get traffic data"/>
+	</div> 
+	<div id="tabs-3"> 
+		<button onclick="javascript:q=(document.location.href);void(open('http://www.wsdot.wa.gov/traffic/seattle/traveltimes?url='+escape(q),'_main','resizable,location,menubar,toolbar,scrollbars,status'));">WSDOT Travel Times</button>
+		<button onclick="javascript:q=(document.location.href);void(open('http://www.wsdot.wa.gov/traffic/seattle?url='+escape(q),'_main','resizable,location,menubar,toolbar,scrollbars,status'));">WSDOT Home</button>
+		<button onclick="javascript:q=(document.location.href);void(open('http://www.flickr.com/photos/wsdot?url='+escape(q),'_main','resizable,location,menubar,toolbar,scrollbars,status'));">WSDOT Flickr Site</button>
+	
+	</div> 
+</div> 
+ 
+</div>
+</body> 
+</html> 

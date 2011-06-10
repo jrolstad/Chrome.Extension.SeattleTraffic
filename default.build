@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<project name="ChromeExtensionBuild" default="build" basedir=".">
+	
+	<target name="CreateZip" description="Zips up the code for deployment">
+		<zip zipfile="seattle_traffic.zip">
+		    <fileset basedir=".\code">
+		        <include name="**/*" />
+		    </fileset>
+		</zip>
+	</target>
+	
+</project>
